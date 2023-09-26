@@ -1,0 +1,449 @@
+/*body {
+    padding: 0%;
+    margin: 0%;
+    width: 1098px;
+    height: 600px;
+    background-image: url(../assets/images/background.png);
+    background-size: cover;
+    background-repeat: space;
+}
+
+.cartel {
+    height: 600px;
+    background-image: url(../assets/images/menu.jpg);
+}
+
+header {
+    padding-left: 25px;
+    width: 1340px;
+    height: 200px;
+    background-color: #1a1a1ada;
+    background-size: cover;
+}
+
+.paginaMenu{
+    width: 1324px;
+}
+
+h1 {
+    width: 500px;
+    padding-left: 30px;
+    padding-top: 30px;
+    margin: 0%;
+    font-size: 80px;
+    text-align: left;
+    font-weight: bold;
+    color: #ffe3df;
+}
+
+h2 {
+    padding-left: 400px;
+    margin: 0%;
+    text-align: left;
+    color: blanchedalmond;
+    font-size: 25px;
+}
+
+h3 {
+    color: blanchedalmond;
+    margin: 0%;
+    padding: 0%;
+}
+
+#escribinos {
+    padding-top: 20px;
+    padding-left: 130px;
+    font-size: 50px;
+}
+
+#menu {
+    width: 800px;
+    color: rgb(233, 233, 233);
+    padding-top: 0px;
+    padding-left: 50%;
+    font-size: 55px;
+    text-decoration: rgb(233, 233, 233) solid underline;
+    font-style: oblique;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+
+
+a {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+
+.indice {
+    padding-right: 120px;
+    padding-top: 15px;
+    margin-top: 0px;
+    text-align: right;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#inicio {
+    padding: 0%;
+    margin: 0%;
+    width: 1300px;
+    height: 350px;
+}
+
+.contactosMain {
+    width: 1366px;
+    height: 350px;
+    background-color: #3a3939c2;
+}
+
+.general {
+    width: 1349px;
+    height: 360px;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+.clasicas {
+    width: 350px;
+    height: 0px;
+    color: blanchedalmond;
+    padding-top: 15px;
+    padding-left: 5%;
+    text-align: center;
+
+}
+
+#primerTabla {
+    padding-left: 0px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+#bacon {
+    padding-top: 20px;
+}
+
+form {
+    padding-top: 100px;
+    padding-left: 5%;
+    margin: 0%;
+}
+
+label {
+    color: beige;
+    padding-left: 7px;
+}
+
+.cuadros {
+    width: 300px;
+    height: 0.5px;
+    padding-left: 10%;
+    margin: 0%;
+    font-size: x-large
+}
+
+input{
+    color: black;
+    background-color: beige;
+    border-radius: 7px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium
+}
+
+textarea{
+    border-color: black;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+.areas {
+    padding-left: 45%;
+    padding-top: -20%;
+    font-size: x-large
+}
+
+.compartir {
+    width: 350px;
+    height: 0px;
+    color: blanchedalmond;
+    padding-top: 0px;
+    padding-left: 36%;
+    text-align: center;
+}
+
+#segundaTabla {
+    padding-left: 0px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#platos {
+    padding: 0%;
+    margin: 0%;
+}
+
+#papas {
+    width: 144px;
+}
+
+#empanadas {
+    padding-top: 10px;
+    width: 144px;
+}
+
+#tercerTabla {
+    padding-left: 0px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.tastySelection {
+    width: 400px;
+    height: 0px;
+    color: blanchedalmond;
+    padding-top: 0px;
+    padding-left: 65%;
+    text-align: center;
+}
+
+.opciones{
+    width: 284px;
+}
+
+.especiales{
+    width: 284px;
+    height: 350px;
+}
+
+.loop{
+    padding-right: 0%;
+    width: 160px;
+}
+
+#monster {
+    width: 85px;
+}
+
+#poolchito{
+    width: 55px;
+}
+
+.descripcion {
+    width: 550px;
+    height: 5px;
+    padding-top: 8%;
+    padding-left: 10.5%;
+    margin: 0%;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 40px;
+    font-style: oblique;
+}
+
+#desde {
+    text-decoration: rgba(1, 2, 1, 0.685) solid underline;
+}
+
+footer {
+    background-color: #1a1a1ada;
+    background-size: cover;
+    padding-left: 25px;
+    margin: 0%;
+    width: 1340px;
+    height: 101px;
+}
+
+.email {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px;
+    height: 2px;
+    padding-left: 5%;
+    padding-top: 2%;
+    color: rgb(255, 255, 255);
+    text-decoration: rgba(255, 255, 255, 0.685) solid underline;
+}
+
+.redes {
+    font-family: 'Courier New', Courier, monospace;
+    width: 400px;
+    height: 5px;
+    padding-left: 65%;
+    padding-bottom: 5%;
+    color: rgb(255, 255, 255)
+}
+
+#sociales {
+    padding-left: 30px;
+}
+
+#facebook {
+    padding-right: 0%;
+}
+
+#instagram {
+    padding-left: 20px;
+}
+
+#emailMenu{
+    padding-bottom: 0%;
+}
+
+#redesMenu{
+    padding-left: 65%;
+    margin: 0%;
+}
+*/
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+#inicio {
+
+    background-image: url(../assets/images/background.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 50px auto auto 100px;
+    grid-template-areas:
+        "header"
+        "nav"
+        "descripcion"
+        "imagen"
+        "footer";
+}
+
+.header {
+    
+    background-color: #1a1a1a;
+    grid-area: header;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    margin: 0%;
+    color: rgb(197, 197, 5);
+    font-size: 45px;
+}
+
+h2{
+    
+    text-align: center;
+    font-size: small;
+    margin: 0%;
+    color: rgba(170, 170, 31, 0.904);
+    text-decoration: overline;
+}
+
+.navbar {
+    
+    background-color: #1a1a1ada;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "nav1 nav2";
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(216, 216, 143, 0.904);
+}
+
+
+#nav1 {
+
+    grid-area: nav1;
+    text-align: center;
+
+}
+
+#nav2 {
+
+    grid-area: nav2;
+    text-align: center;
+}
+
+article {
+    grid-area: descripcion;
+    padding: 25px 15px 0px 15px;
+    text-align: center;
+    background-color: #1a1a1a86;
+}
+
+.descripcion{
+    margin: 0%;
+    color: rgb(162, 167, 94);
+    text-decoration:  underline ;
+    font-style: italic;
+    font-size: larger;
+}
+
+aside {
+    grid-area: imagen;
+    background-color: #1a1a1a86;
+
+}
+
+.open {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #1a1a1ada;
+}
+
+#email h3 {
+font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+    font-size: medium;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+#email span {
+    
+font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+    font-size: medium;
+}
+
+#redes h3 {
+    
+font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+    font-size: medium;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+#facebook {
+    width: 40px;
+    height: 40px;
+}
+
+#instagram {
+    width: 35px;
+    height: 35px;
+}
