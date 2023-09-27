@@ -232,70 +232,7 @@ textarea{
     width: 55px;
 }
 
-.descripcion {
-    width: 550px;
-    height: 5px;
-    padding-top: 8%;
-    padding-left: 10.5%;
-    margin: 0%;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    font-size: 40px;
-    font-style: oblique;
-}
 
-#desde {
-    text-decoration: rgba(1, 2, 1, 0.685) solid underline;
-}
-
-footer {
-    background-color: #1a1a1ada;
-    background-size: cover;
-    padding-left: 25px;
-    margin: 0%;
-    width: 1340px;
-    height: 101px;
-}
-
-.email {
-    font-family: 'Courier New', Courier, monospace;
-    width: 100px;
-    height: 2px;
-    padding-left: 5%;
-    padding-top: 2%;
-    color: rgb(255, 255, 255);
-    text-decoration: rgba(255, 255, 255, 0.685) solid underline;
-}
-
-.redes {
-    font-family: 'Courier New', Courier, monospace;
-    width: 400px;
-    height: 5px;
-    padding-left: 65%;
-    padding-bottom: 5%;
-    color: rgb(255, 255, 255)
-}
-
-#sociales {
-    padding-left: 30px;
-}
-
-#facebook {
-    padding-right: 0%;
-}
-
-#instagram {
-    padding-left: 20px;
-}
-
-#emailMenu{
-    padding-bottom: 0%;
-}
-
-#redesMenu{
-    padding-left: 65%;
-    margin: 0%;
-}
 */
 
 * {
