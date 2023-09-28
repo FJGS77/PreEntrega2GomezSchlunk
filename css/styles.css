@@ -272,7 +272,7 @@ h1 {
     color: rgb(197, 197, 5);
     font-size: 3em;
     font-weight: 50px;
-    text-shadow: 0 0 70px rgb(196, 176, 143);
+    text-shadow: 0 0 50px rgb(196, 176, 143);
 
 }
 
@@ -381,6 +381,7 @@ footer {
     text-align: center;
     padding: 0%;
     margin: 0%;
+    text-shadow: 0 0 20px rgb(196, 176, 143)
 }
 
 #email span {
@@ -388,6 +389,7 @@ footer {
     font-family: 'Courier New', Courier, monospace;
     color: wheat;
     font-size: medium;
+    text-shadow: 0 0 20px rgb(196, 176, 143)
 }
 
 #redes h3 {
@@ -398,6 +400,7 @@ footer {
     text-align: center;
     padding-right: 0%;
     margin: 0%;
+    text-shadow: 0 0 20px rgb(196, 176, 143)
 }
 
 #facebook {
@@ -673,17 +676,18 @@ footer {
 
 
     #nuestro {
-        padding-top: 5%;
+        padding-top: 13%;
         padding-bottom: 5%;
     }
 
     #objetivos {
-        padding-top: 5%;
+        padding-top: 13%;
         padding-bottom: 5%;
     }
 
     .titulosInfo {
         font-size: 40px;
+        text-decoration: 3px solid underline rgba(153, 153, 1, 0.904);
     }
 
     .nosotrosInfo {
@@ -711,7 +715,6 @@ footer {
     font-size: x-large;
     padding: 5% 5% 0% 5%;
     text-decoration: none;
-    text-shadow: 0 0 40px rgb(233, 151, 44);
 }
 
 .sucursales1 {
@@ -769,3 +772,32 @@ iframe{
     box-shadow: 0 0 25px rgb(119, 29, 29) ;
 }
 
+@media (min-width: 768px) {
+
+    #tituloSucursales{
+        text-shadow: 0 0 35px rgb(165, 116, 31);
+    }
+
+    ul{
+        border: none;
+    }
+
+    .sucursales1{
+        margin: 5% 5% 0% 5%;
+        border: 1px solid white;
+        border-bottom: 2px dashed rgb(172, 172, 4);
+        
+    }
+
+    .sucursales2{
+        margin: 0% 5% 5% 5%;
+        border: 1px solid white;
+        border-top: none;
+    }
+
+
+    }
+
+    @media (min-width: 1024px){
+        
+    }
