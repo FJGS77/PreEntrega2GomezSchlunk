@@ -715,10 +715,14 @@ footer {
     font-size: x-large;
     padding: 5% 5% 0% 5%;
     text-decoration: none;
+    letter-spacing: 0.25em;
+}
+
+#primer {
+    grid-area: primer;
 }
 
 .sucursales1 {
-    grid-area: primer;
     padding-top: 5%;
     padding-bottom: 5%;
     display: flex;
@@ -726,9 +730,11 @@ footer {
     justify-content: space-evenly;
 }
 
+#tercera {
+    grid-area: tercera;
+}
 
 .sucursales2 {
-    grid-area: tercera;
     padding-bottom: 5%;
     padding-top: 5%;
     display: flex;
@@ -750,7 +756,7 @@ ul {
     margin: 0%;
     padding-left: 1rem;
     border-bottom: dashed rgb(119, 29, 29);
-    
+
 }
 
 .calles {
@@ -764,40 +770,94 @@ ul {
     list-style-type: none;
     text-align: center;
     padding-right: 1rem;
-    
+
     color: rgb(133, 120, 97);
 }
 
-iframe{
-    box-shadow: 0 0 25px rgb(119, 29, 29) ;
+iframe {
+    box-shadow: 0 0 25px rgb(119, 29, 29);
 }
 
 @media (min-width: 768px) {
 
-    #tituloSucursales{
+    #tituloSucursales {
         text-shadow: 0 0 35px rgb(165, 116, 31);
     }
 
-    ul{
+    ul {
         border: none;
     }
 
-    .sucursales1{
+    .sucursales1 {
         margin: 5% 5% 0% 5%;
         border: 1px solid white;
         border-bottom: 2px dashed rgb(172, 172, 4);
-        
+
     }
 
-    .sucursales2{
+    .sucursales2 {
         margin: 0% 5% 5% 5%;
         border: 1px solid white;
         border-top: none;
     }
 
 
+}
+
+@media (min-width: 1024px) {
+    #sucursales {
+        background-color: black;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25vh 20vh 30vh 20vh;
+        grid-template-areas:
+            "header nav"
+            "primer primer"
+            "tercera tercera"
+            "footer footer";
     }
 
-    @media (min-width: 1024px){
-        
+    #primer {
+        grid-area: primer;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: row-reverse;
     }
+
+    #tercera {
+        grid-area: tercera;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            "map map"
+            "info info";
+    }
+
+    .sucursales1 {
+        margin: 0%;
+        padding: 0%;
+        border: none;
+
+    }
+
+    .sucursales2 {
+        margin: 0%;
+        padding: 0%;
+        border: none;
+    }
+
+    #tituloSucursales {
+        text-align: center;
+    }
+
+    p.3 {
+        grid-area: map;
+
+    }
+
+    li.3{
+      grid-area: info;  
+    }
+}
