@@ -6,6 +6,10 @@
 }
 
 
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
 #inicio {
 
     background-image: url(../assets/images/background.jpg);
@@ -533,7 +537,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border: 1px solid white;
+    border: 2px solid white;
     border-bottom: 2px dashed rgb(172, 172, 4);
     margin: 2% 2% 0% 2%;
 }
@@ -549,7 +553,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0% 2% 2% 2%;
-    border: 1px solid white;
+    border: 2px solid white;
     border-top: none;
 }
 
@@ -575,6 +579,7 @@ ul {
     padding-right: 1rem;
     text-decoration: double underline rgb(133, 120, 97);
     color: rgb(133, 120, 97);
+    list-style-type: none;
 }
 
 .datos {
@@ -607,29 +612,68 @@ iframe {
     #tituloSucursales {
         padding: 5% 0% 0% 0%;
         margin: 0%;
+        font-size: x-large;
     }
 
     .sucursales1 {
-        margin: 5% 0% 0% 0%;
+        margin: 5% 5% 0% 5%;
         padding: 0%;
         flex-direction: column;
+        border-bottom: 4px double rgb(172, 172, 4);
     }
 
-    .mapas{
+    .mapas1 {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: start;
         align-items: center;
+        margin: 2% 5% 2% 5%;
+    }
+
+    .mapas2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+        margin: 0% 5% 2% 5%;
+        border-top: 4px dashed rgb(187, 187, 187);
+    }
+
+    .mapas3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin: 2% 5% 5% 5%;
+    }
+
+    .mapas4 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+        margin: 0% 5% 2% 5%;
+        border-top: 4px dashed rgb(187, 187, 187);
     }
 
     .sucursales2 {
-        margin: 0%;
+        margin: 0% 5% 5% 5%;
         padding: 0%;
         flex-direction: column;
     }
 
-    iframe{
+    iframe {
+        height: 120px;
         width: 250px;
+    }
+
+    ul {
+        margin: 5%;
+    }
+
+    .calles {
+
+        list-style-type: none;
     }
 
 
@@ -638,58 +682,108 @@ iframe {
 
 @media (min-width: 1024px) {
     #sucursales {
-        background-color: black;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 25vh 20vh 30vh 20vh;
+        grid-template-rows: 25vh 15vh auto auto 20vh;
         grid-template-areas:
             "header nav"
+            "encontranos encontranos"
             "primer primer"
             "tercera tercera"
             "footer footer";
     }
 
+
+    #tituloSucursales {
+        text-decoration: 2px underline double rgb(172, 172, 4);
+        padding-top: 4%;
+        font-size: 38px;
+    }
+
     #primer {
-        grid-area: primer;
         margin: 0%;
         padding: 0%;
+        padding-top: 4%;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sucursales1 {
+        display: flex;
+        flex-direction: row;
+        padding: 0%;
+        margin-top: 2%;
+        border: none;
     }
 
     #tercera {
         grid-area: tercera;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas:
-            "map map"
-            "info info";
-    }
-
-    .sucursales1 {
-        margin: 0%;
-        padding: 0%;
-        border: none;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .sucursales2 {
-        margin: 0%;
+        display: flex;
+        flex-direction: row;
         padding: 0%;
         border: none;
     }
 
-    #tituloSucursales {
-        text-align: center;
+    .mapas1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        width: 50%;
+        margin: .25%;
+        border-right: 4px dashed rgb(187, 187, 187);
     }
 
-    p.3 {
-        grid-area: map;
-
+    .mapas2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+        border-top: none;
+        width: 50%;
+        margin: .25%;
+        border-left: 4px solid rgb(172, 172, 4);
     }
 
-    li.3 {
-        grid-area: info;
+
+    .mapas3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        width: 50%;
+        margin: .25%;
+        border-right: 4px solid rgb(172, 172, 4);
     }
+
+    .mapas4 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+        width: 50%;
+        margin: .25%;
+        border-top: none;
+        border-left: 4px dashed rgb(187, 187, 187);
+    }
+
+    .localidades{
+        font-size: 20px;
+    }
+
+    .calles{
+        font-size: 16px;
+    }
+
+    .datos{
+        font-size: 16px;
+    }
+
 }
