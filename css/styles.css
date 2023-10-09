@@ -175,7 +175,7 @@ footer {
     height: 35px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     #inicio {
 
         grid-template-columns: 50% 50%;
@@ -213,7 +213,7 @@ footer {
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
 
     #inicio {
 
@@ -284,31 +284,30 @@ footer {
     grid-area: misvis;
     background-color: #2c2b2bab;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     padding: 5% 2% 0% 2%;
+
 }
 
 #mision {
-    width: 50%;
-    border-right: 2px solid #181313;
+    padding: 2% 2% 5% 2%;
     padding-bottom: 2%;
-
+    border-top: 5px double #181313;
     border-bottom: 5px double #181313;
 }
 
 #vision {
-    width: 50%;
+    padding: 2% 2% 5% 2%;
     padding-bottom: 2%;
-
     border-bottom: 5px double #181313;
 }
 
 .titulosInfo {
     margin: 0%;
     padding: 0%;
-    font-size: 20px;
+    font-size: 30px;
     padding-left: 2%;
     padding-right: 2%;
     color: rgb(197, 197, 5);
@@ -319,7 +318,7 @@ footer {
 .nosotrosInfo {
     margin: 0%;
     padding: 0%;
-    font-size: 12px;
+    font-size: 18px;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
@@ -330,7 +329,7 @@ footer {
 }
 
 #nuestro {
-    padding: 5% 2% 5% 2%;
+    padding: 2% 2% 5% 2%;
     grid-area: equipo;
     background-color: #2c2b2bab;
 
@@ -342,7 +341,7 @@ footer {
     padding-bottom: 2%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     #nosotros {
 
         grid-template-columns: 1fr 1fr 2fr;
@@ -362,6 +361,13 @@ footer {
 
     }
 
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
 
     .navbar {
         align-items: end;
@@ -369,11 +375,16 @@ footer {
     }
 
     #objetivos {
-        padding-top: 10%;
+        padding: 0%;
+        padding-top: 5%;
         padding-left: 5%;
-        padding-right: 0%;
         flex-direction: row;
         border-bottom: none;
+        align-items: start;
+        justify-content: center;
+        border-top: 10px double #181313;
+        border-bottom: 10px double #181313;
+        border-left: 10px double #181313;
     }
 
     #mision {
@@ -392,10 +403,15 @@ footer {
 
     #nuestro {
         padding: 0%;
-        padding-top: 10%;
+        padding-top: 5%;
+        padding-right: 5%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
+        border-top: 10px double #181313;
+        border-bottom: 10px double #181313;
+        border-right: 10px double #181313;
+
     }
 
 
@@ -417,6 +433,7 @@ footer {
 
         padding: 0% 6% 0% 6%;
         font-size: 15px;
+
     }
 
     #presentacion {
@@ -428,53 +445,82 @@ footer {
     }
 }
 
-@media (min-width: 1200px) {
+
+@media (min-width: 1024px) {
+
+    h1 {
+        font-size: 65px;
+        text-decoration: underline rgba(170, 170, 31, 0.904);
+        text-decoration-thickness: 2px;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: end;
+        padding-right: 5%;
+        text-decoration: none;
+    }
 
     #nosotros {
         grid-template-rows: 25vh 55vh 20vh;
 
     }
 
-
     #nuestro {
-        padding-top: 13%;
+        padding-top: 5%;
         padding-bottom: 5%;
     }
 
     #objetivos {
-        padding-top: 13%;
+        padding-top: 5%;
         padding-bottom: 5%;
     }
 
     .titulosInfo {
-        font-size: 40px;
+        font-size: 35px;
         text-decoration: 3px solid underline rgba(153, 153, 1, 0.904);
     }
 
     .nosotrosInfo {
-        font-size: 20px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 18px;
     }
+
+    #presentacion {
+        padding-bottom: 0%;
+    }
+
 }
 
 #sucursales {
     background-color: black;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25vh 10vh auto auto 20vh;
+    grid-template-rows: 25vh 10vh 10vh auto auto 20vh;
     grid-template-areas:
         "header"
         "nav"
+        "encontranos"
         "primer"
         "tercera"
         "footer";
 }
 
+#encontranos {
+
+    grid-area: encontranos;
+
+}
+
 #tituloSucursales {
     text-align: center;
-    font-size: x-large;
+    font-size: large;
     padding: 5% 5% 0% 5%;
     text-decoration: none;
     letter-spacing: 0.25em;
+    align-items: center;
+    text-shadow: 0 0 35px rgb(165, 116, 31);
 }
 
 #primer {
@@ -487,6 +533,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    border: 1px solid white;
+    border-bottom: 2px dashed rgb(172, 172, 4);
+    margin: 2% 2% 0% 2%;
 }
 
 #tercera {
@@ -499,10 +548,14 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 0% 2% 2% 2%;
+    border: 1px solid white;
+    border-top: none;
 }
 
 
 .localidades {
+    padding-right: 1rem;
     margin: 0%;
     text-align: center;
     color: rgb(161, 127, 64);
@@ -514,7 +567,6 @@ ul {
     padding: 0%;
     margin: 0%;
     padding-left: 1rem;
-    border-bottom: dashed rgb(119, 29, 29);
 
 }
 
@@ -538,27 +590,48 @@ iframe {
 }
 
 @media (min-width: 768px) {
+    #sucursales {
 
-    #tituloSucursales {
-        text-shadow: 0 0 35px rgb(165, 116, 31);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25vh 15vh auto auto 20vh;
+        grid-template-areas:
+            "header nav"
+            "encontranos encontranos"
+            "primer primer"
+            "tercera tercera"
+            "footer footer";
     }
 
-    ul {
-        border: none;
+
+    #tituloSucursales {
+        padding: 5% 0% 0% 0%;
+        margin: 0%;
     }
 
     .sucursales1 {
-        margin: 5% 5% 0% 5%;
-        border: 1px solid white;
-        border-bottom: 2px dashed rgb(172, 172, 4);
+        margin: 5% 0% 0% 0%;
+        padding: 0%;
+        flex-direction: column;
+    }
 
+    .mapas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .sucursales2 {
-        margin: 0% 5% 5% 5%;
-        border: 1px solid white;
-        border-top: none;
+        margin: 0%;
+        padding: 0%;
+        flex-direction: column;
     }
+
+    iframe{
+        width: 250px;
+    }
+
 
 
 }
@@ -616,7 +689,7 @@ iframe {
 
     }
 
-    li.3{
-      grid-area: info;  
+    li.3 {
+        grid-area: info;
     }
 }
