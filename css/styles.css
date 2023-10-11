@@ -144,7 +144,7 @@ footer {
     font-family: 'Courier New', Courier, monospace;
     color: wheat;
     font-size: medium;
-    text-align: center;
+    text-align: left;
     padding: 0%;
     margin: 0%;
     text-shadow: 0 0 20px rgb(196, 176, 143)
@@ -498,7 +498,7 @@ footer {
 }
 
 #sucursales {
-    background-color: black;
+    background-image: radial-gradient(circle at 100%, #333, #333 50%, #353434 75%, #353434 75%);
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 25vh 10vh 10vh auto auto 20vh;
@@ -524,7 +524,7 @@ footer {
     text-decoration: none;
     letter-spacing: 0.25em;
     align-items: center;
-    text-shadow: 0 0 35px rgb(165, 116, 31);
+    /*text-shadow: 0 0 35px rgb(165, 116, 31);*/
 }
 
 #primer {
@@ -537,7 +537,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border: 2px solid white;
+    border-top: 2px solid white;
     border-bottom: 2px dashed rgb(172, 172, 4);
     margin: 2% 2% 0% 2%;
 }
@@ -553,7 +553,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0% 2% 2% 2%;
-    border: 2px solid white;
+    border-bottom: 2px solid white;
     border-top: none;
 }
 
@@ -774,16 +774,91 @@ iframe {
         border-left: 4px dashed rgb(187, 187, 187);
     }
 
-    .localidades{
+    .localidades {
         font-size: 20px;
     }
 
-    .calles{
+    .calles {
         font-size: 16px;
     }
 
-    .datos{
+    .datos {
         font-size: 16px;
     }
 
 }
+
+/*contactos*/
+
+#contactos {
+
+    background-image: url(../assets/images/contactosbackground.webp);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25vh 10vh auto 20vh;
+    grid-template-areas:
+        "header"
+        "nav"
+        "informacion"
+        "footer";
+}
+
+
+
+.contactosTasty {
+    grid-area: informacion;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "cuadros"
+        "areas";
+}
+
+#cuadros {
+    grid-area: cuadros;
+    margin: 5% 5% 0% 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+}
+
+#areas {
+    grid-area: areas;
+    margin: 0% 5% 5% 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+
+textarea{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(177, 163, 163);
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(177, 163, 163);
+}
+
+@media (min-width: 768px) {
+    #contactos {
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25vh 15vh auto auto 20vh;
+        grid-template-areas:
+            "header nav"
+            "encontranos encontranos"
+            "primer primer"
+            "tercera tercera"
+            "footer footer";
+    }

@@ -6,90 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/burguer icon (2).png" type="image/x-icon">
     <title>Tasty Loop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
 
-    <header id="contactos">
+    <div id="contactos">
 
-        <h1>Tasty Loop</h1>
-
-
-        <h2>Hamburguesas para repetir...</h2>
-
-        <div class="indice">
-
+        <div class="header">
             <a href="../index.html">
-                <span>Inicio</span>
-            </a>
-            <span> | </span>
-
-            <a href="./menu.html">
-                <span>Menú</span>
-            </a>
-            <span> | </span>
-
-            <a href="./sucursales.html">
-                <span>Sucursales</span>
-            </a>
-            <span> | </span>
-
-            <a href="./nosotros.html">
-                <span>Nosotros</span>
-            </a>
-            <span> | </span>
-
-            <a href="./contactos.html">
-                <span>Contactos</span>
+                <h1>Tasty Loop</h1>
             </a>
 
+
+            <h2>Hamburguesas para repetir...</h2>
         </div>
 
-        <h3 id="escribinos">Escribinos</h3>
+        <div class="navbar">
+            <nav id="nav1">
 
-    </header>
+                <a href="./menu.html">Menú</a>
 
-    <main class="contactosMain">
-        <form action="#" method="post">
-            <div class="cuadros">
-            <label for="nombre" id="nombre">Nombre/s:</label><br>
-            <input type="text" name="nombre"><br>
-            <label for="apellido" id="apellido">Apellido/s:</label><br>
-            <input type="text" name="apellido"><br>
-            <label for="email">E-mail:</label><br>
-            <input type="email" name="email"><br>
-            <label for="region">Región:</label><br>
-            <input type="text" name="region" id="region">
-            </div>
-            <div class="areas">
-            <label for="asunto">Asunto</label><br>
-            <textarea name="asunto" id="asunto" cols="40" rows="2"></textarea><br>
-            <textarea name="comentario" id="comentario" cols="40" rows="10"></textarea>
-            <input type="submit">
-        </div>
-        </form>
-    </main>
+                <a href="./sucursales.html">Sucursales</a>
+            </nav>
+            <nav id="nav2">
+                <a href="./nosotros.html">Nosotros</a>
 
-    <footer>
-
-        <div>
-
-            <div class="email">
-                <span>E-mail:</span><br>
-                <span>TastyLoop@gmail.com</span>
-            </div>
-
-            <div class="redes">
-                <span id="sociales">Redes Sociales:</span><br>
-                <span><a id="facebook" href="https://www.facebook.com">Facebook</a></span>
-                <span><a id="instagram" href="https://www.instagram.com">Instagram</a></span>
-            </div>
-
+                <a href="./contactos.html">Contactos</a>
+            </nav>
         </div>
 
-    </footer>
+        <main class="contactosTasty">
+            <form action="#" method="post">
+                <div id="cuadros">
+                    <input type="text" name="nombre" placeholder="Nombre/s"><br>
+                    <input type="text" name="apellido" placeholder="Apellido/s"><br>
+                    <input type="email" name="email" placeholder="E-mail"><br>
+                    <input type="text" name="region" id="region" placeholder="Región"><br>
+                </div>
+                <div id="areas">
+                    <textarea name="asunto" id="asunto" cols="10" rows="2" placeholder="Asunto"></textarea><br>
+                    <textarea name="comentario" id="comentario" cols="10" rows="5" placeholder="Escribinos..."></textarea><br>
+                    <input type="submit" id="enviar">
+                </div>
+            </form>
+        </main>
 
+        <footer class="d-flex justify-content-around align-items-center">
+
+            <div class="d-flex justify-content-between align-items-center">
+
+                <div class="d-flex flex-column m-3" id="email">
+                    <h3>E-mail: <br>
+                        <span>TastyLoop@gmail.com</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center"></div>
+            <div class="d-flex flex-column m-3" id="redes">
+                <h3 id="sociales">Redes Sociales:<br>
+                    <span><a href="https://www.facebook.com"><img id="facebook" src="../assets/images/facebook.png"
+                                alt="Logo de la red social Facebook"></a></span>
+                    <span><a href="https://www.instagram.com"><img id="instagram" src="../assets/images/Instagram.png"
+                                alt="Logo de la red social Instagram"></a></span>
+                </h3>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 
