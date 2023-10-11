@@ -7,7 +7,7 @@
 
 
 ::-webkit-scrollbar-thumb {
-    background: black;
+    background: rgba(0, 0, 0, 0.233);
 }
 
 #inicio {
@@ -810,7 +810,7 @@ iframe {
     grid-area: informacion;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 45% 55%;
     grid-template-areas:
         "cuadros"
         "areas";
@@ -818,17 +818,16 @@ iframe {
 
 #cuadros {
     grid-area: cuadros;
-    margin: 5% 5% 0% 5%;
+    margin: 6% 5% 2% 5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: left;
     align-items: start;
 }
 
 #areas {
     grid-area: areas;
-    margin: 0% 5% 5% 5%;
+    margin: 2% 5% 6% 5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
@@ -839,14 +838,18 @@ iframe {
 textarea{
     border-radius: 5px;
     border: 1px solid black;
-    background-color: rgb(177, 163, 163);
+    background-color: rgb(34, 34, 34);
 }
 
 input{
     border: 1px solid black;
     border-radius: 5px;
     color: black;
-    background-color: rgb(177, 163, 163);
+    background-color: rgb(34, 34, 34);
+}
+
+#enviar{
+    background-color: rgb(110, 110, 5);
 }
 
 @media (min-width: 768px) {
@@ -854,11 +857,36 @@ input{
 
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 25vh 15vh auto auto 20vh;
+        grid-template-rows: 25vh 55vh 20vh;
         grid-template-areas:
             "header nav"
-            "encontranos encontranos"
-            "primer primer"
-            "tercera tercera"
+            "informacion informacion"
             "footer footer";
+
     }
+
+    .contactosTasty {
+        grid-area: informacion;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "cuadros areas"
+    }
+
+   #cuadros{
+        margin: 0% 5% 0% 5%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #areas{
+        margin: 0% 5% 0% 5%;
+        justify-content: center;
+        
+    }
+
+    #enviar{
+        width: 25%;
+    }
+
+ }
