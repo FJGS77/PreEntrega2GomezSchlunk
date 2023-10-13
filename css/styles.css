@@ -182,6 +182,7 @@ footer {
 @media (min-width: 768px) {
     #inicio {
 
+        background-color: #443c0c;
         grid-template-columns: 50% 50%;
         grid-template-rows: 25vh 50vh 25vh;
         grid-template-areas:
@@ -348,6 +349,7 @@ footer {
 @media (min-width: 768px) {
     #nosotros {
 
+        background-color: #443c0c;
         grid-template-columns: 1fr 1fr 2fr;
         grid-template-rows: 25vh 50vh 25vh;
         grid-template-areas:
@@ -853,6 +855,7 @@ input{
 @media (min-width: 768px) {
     #contactos {
 
+        background-color: #443c0c;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 25vh 55vh 20vh;
@@ -893,7 +896,7 @@ input{
 
  #menu {
 
-    background-image: url(../assets/images/menu.webp);
+    background-image: url(../assets/images/contactosbackground.webp);
     background-size: contain;
     display: grid;
     grid-template-columns: 100%;
@@ -908,32 +911,162 @@ input{
 
 .productos{
     grid-area: menu;
+    margin: 5%;
+    animation-name: mobile;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 
-#tituloMenu{
-text-align: center;
-}
-
-.clasicas{
+.clasica{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0% 10% 10% 10%;
+    animation-name: mobile;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.tasty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0% 10% 10% 10%;
+    animation-name: mobile;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.plato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0% 10% 10% 10%;
+    animation-name: mobile;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.titulo{
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(48, 2, 2);
+}
+
+.nombreMenu{
+    text-align: center;
+    font-size: 28px;
+    margin: 10%;
+    color: rgb(167, 153, 132);
+    animation-name: mobile;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+.nombre{
+    font-size: larger;
+    margin: 5% 0% 0% 0%;
+    color: rgb(43, 31, 14);
+}
+
+.ingredientes{
+    font-size: medium;
+    margin: 0%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.comida1{
+    width: 120px;
+}
+
+.comida2{
+    width: 80px;
+}
+
+.comida3{
+    width: 140px;
+}
+
+@keyframes mobile {
+
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+    
+}
+
+@media (min-width: 768px){
+
+    #menu {
+        background-color: #443c0c;
+        background-size: contain;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25vh auto 20vh;
+        grid-template-areas:
+            "header nav"
+            "menu menu"
+            "footer footer";
+    }
+
+.productos{
+    /*background-image: url(../assets/images/menu.webp);*/
+    background-size: contain;
+}
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
-.tastySelection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nombreMenu{
+    font-size: 32px;
 }
 
-.compartir{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nombre{
+    font-size: 25px;
+    margin: 0%;
 }
 
+.ingredientes{
+    font-size: 20px;
+    margin: 0% 5% 0% 5%;
+}
 
-.comida{
+.clasica{
+    padding: 0%;
+}
+
+.tasty{
+    
+    padding: 0% 0% 5% 0%;
+}
+
+.plato{
+    padding: 0%;
+}
+
+.comida1{
+    width: 150px;
+}
+
+.comida2{
     width: 100px;
 }
+
+.comida3{
+    width: 190px;
+}
+
+}
+    
