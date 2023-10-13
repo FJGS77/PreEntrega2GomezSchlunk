@@ -788,8 +788,6 @@ iframe {
 
 }
 
-/*contactos*/
-
 #contactos {
 
     background-image: url(../assets/images/contactosbackground.webp);
@@ -890,3 +888,52 @@ input{
     }
 
  }
+
+ /*MENU*/
+
+ #menu {
+
+    background-image: url(../assets/images/menu.webp);
+    background-size: contain;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25vh 10vh auto 20vh;
+    grid-template-areas:
+        "header"
+        "nav"
+        "menu"
+        "footer";
+}
+
+
+.productos{
+    grid-area: menu;
+}
+
+#tituloMenu{
+text-align: center;
+}
+
+.clasicas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tastySelection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compartir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.comida{
+    width: 100px;
+}
