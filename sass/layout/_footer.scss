@@ -1,0 +1,57 @@
+footer {
+    grid-area: footer;
+    background-color: #1a1a1ada;
+}
+
+#email h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+    font-size: medium;
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+    text-shadow: 0 0 20px rgb(196, 176, 143)
+}
+
+#email span {
+
+    font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+    font-size: medium;
+    text-shadow: 0 0 20px rgb(196, 176, 143)
+}
+
+#redes h3 {
+
+    font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+    font-size: medium;
+    text-align: center;
+    padding-right: 0%;
+    margin: 0%;
+    text-shadow: 0 0 20px rgb(196, 176, 143)
+}
+
+#facebook {
+    width: 40px;
+    height: 40px;
+}
+
+#instagram {
+    width: 35px;
+    height: 35px;
+}
+
+@media (min-width: 1024px) {
+    #email h3 {
+        font-size: 20px;
+    }
+
+    #email span {
+        font-size: 18px;
+    }
+
+    #redes h3 {
+        font-size: 18px;
+    }
+ }
